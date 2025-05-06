@@ -205,11 +205,9 @@ Go to: http://localhost:8000/docs to test.
 - The system is designed to handle 1 million+ records efficiently.
 - Vector columns use the `pgvector` extension with proper type casting.
 - Queries use `LIMIT 10` and are filtered with both keyword and similarity metrics.
-- Dummy embeddings are used for testing but structured for drop-in replacement with real models.
-- SQLAlchemy session management is used for safe and scalable DB access.
-- Docker setup ensures portability and consistent environment.
+
 
 ## Notes
 
 - CSVs from Mockaroo should be placed in the `data/` folder.
-- Replace the embedding generator with OpenAI or HuggingFace for production use.
+- Future Work: Integrate OpenAI or HuggingFace for a more production ready application.
